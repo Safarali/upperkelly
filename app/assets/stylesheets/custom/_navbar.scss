@@ -1,0 +1,40 @@
+/* Navigation */
+
+.top-nav {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.mobile-nav-icon {
+    float: right;
+    cursor: pointer;
+    margin-top: 12px;
+    display: none;
+}
+
+.mobile-nav-icon i {
+  color: $default-color;
+}
+.logo img {
+  width: auto;
+  height: 100px;
+}
+.top-nav-links {
+  list-style-type: none;
+
+  li {
+    display:  inline-block;
+    margin-left: 15px;
+    padding-left: 30px;
+    margin-top: 25px;
+  }
+
+  a {
+    text-decoration:  none;
+    color: $default-color;
+    font-size: 75%;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+  }
+}

@@ -1,0 +1,26 @@
+/* Header Header Part */
+
+header {
+  overflow-x: hidden;
+}
+
+
+h1 {
+  font-size: 280%;
+  color: $default-color;
+  line-height: 60px;
+  letter-spacing: 1px;
+  margin-left: 30px;
+  font-weight: 400;
+
+}
+
+.hero-text:before {
+  margin-top: 120px;
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 15px;
+  width: 550px;
+  background-color: $default-color;
+}

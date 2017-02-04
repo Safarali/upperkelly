@@ -1,0 +1,16 @@
+/* Colors */
+$asphalt-default: #34495e;
+$asphalt-light: lighten($asphalt-default, 30%);
+$asphalt-lighter: lighten($asphalt-default, 20%);
+$default-color: #483A48;
+$gray-default: #b3b3b3;
+$red-default: #e74c3c;
+
+
+/* Center maker  for floated elements */
+
+@mixin center-maker {
+  float: none !important;
+  display: block;
+  margin: 0 auto;
+}

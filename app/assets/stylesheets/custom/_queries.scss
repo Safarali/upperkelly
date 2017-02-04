@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1199px){
+  /* Navigation Bar */
+
+  /* Header */
+  h1 {
+    font-size: 230%;
+    line-height: 50px;
+  }
+  .hero-text:before {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* Navigation */
+  .logo img,
+  .top-nav-links {
+    @include center-maker;
+  }
+
+  .top-nav-links li {
+    margin-top: 10px;
+  }
+
+  /* Header */
+  .hero-text:before {
+    margin-top: 30px;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Navigation */
+  .top-nav {
+    padding-bottom: 20px;
+  }
+  .top-nav-links {
+    display: none;
+  }
+
+  .logo img {
+    float: left !important;
+    height: 80px;
+  }
+
+  .mobile-nav-icon {
+    display: block;
+  }
+
+  /* Header */
+
+  .hero-text:before {
+    display: none;
+  }
+  h1 {
+    border-left: 15px solid $red-default;
+    padding: 90px 0 50px 40px;
+    margin-top: -60px;
+  }
+
+
+}
+
+/*================ Container Outside =================*/
+@media (min-width: 768px) {
+  .container-outside {
+    min-width: 750px;
+    max-width: 850px; /* desired width */
+  }
+}
+@media (min-width: 992px) {
+  .container-outside {
+    min-width: 970px;
+    max-width: 1170px; /* desired width */
+  }
+}
+@media (min-width: 1200px) {
+  .container-outside {
+    min-width: 1170px;
+    max-width: 1270px; /* desired width */
+  }
+}

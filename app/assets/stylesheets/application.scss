@@ -19,8 +19,11 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat|Open+Sans|Quattrocento+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500|Maven+Pro:500');
 
 /* Custom Partials */
+@import "custom/veriables_mixins";
 @import "custom/global";
-@import "custom/navbar"
+@import "custom/navbar";
+@import "custom/home";
+@import "custom/queries";
