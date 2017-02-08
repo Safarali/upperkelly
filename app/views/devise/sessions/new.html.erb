@@ -1,0 +1,37 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <h2>Log in</h2>
+                        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                        <%= render 'shared/devisemessage' %>
+                            <div class="form-group">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                 <%= f.email_field :email, class: "form-control", placeholder: "Email", autofocus: true %>
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
+                            </div>
+
+                          <% if devise_mapping.rememberable? %>
+                            <div class="check-box">
+                              <%= f.check_box :remember_me %>
+                              <%= f.label :remember_me %>
+                            </div>
+                          <% end -%>
+                          <div class="actions">
+                              <%= f.submit "Log in", class: "hero-btn form-btn" %>
+                          </div>
+                        <% end %>
+                        <div class="form-footer">
+                            <%= link_to "Forgot Password?", new_admin_password_path %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

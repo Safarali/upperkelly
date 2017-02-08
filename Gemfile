@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets', '3.7.1'
 gem 'bootstrap-sass', '3.3.6'
 gem 'font-awesome-sass'
+gem 'devise'
+gem 'toastr-rails'
 
 
 group :development, :test do

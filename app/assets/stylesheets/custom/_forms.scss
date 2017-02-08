@@ -1,0 +1,83 @@
+/* Panel */
+.panel {
+  background: #FEFDFB;
+  border: 1px solid $asphalt-very-light;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+
+  i {
+    position: absolute;
+    pointer-events: none;
+    top: 15px;
+    right: 15px;
+    color: $asphalt-very-light;
+  }
+
+  .fa.fa-envelope {
+    font-size: 80%;
+  }
+}
+
+.form-control {
+  height: 50px;
+  color: $asphalt-lighter;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    border: 1px solid $asphalt-very-light;
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgba(170, 170, 170, .5)
+}
+.hero-btn{
+  background-color: $red-default;
+  border: none;
+  font-size: 20px;
+  padding: 10px 40px;
+  color: #fff;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $red-light;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.form-btn {
+  width: 100%;
+}
+
+.form-footer {
+  font-size: 70%;
+  border-top: 1px solid $gray-default ;
+  margin-top: 20px;
+  padding-top: 15px;
+  color: #34495e;
+
+  a {
+    color: #e74c3c;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.check-box {
+  font-size: 70%;
+  color: $asphalt-lighter;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  text-align: left;
+}

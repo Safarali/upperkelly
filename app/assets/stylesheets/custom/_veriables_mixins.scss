@@ -1,10 +1,12 @@
 /* Colors */
 $asphalt-default: #34495e;
-$asphalt-light: lighten($asphalt-default, 30%);
 $asphalt-lighter: lighten($asphalt-default, 20%);
+$asphalt-light: lighten($asphalt-default, 30%);
+$asphalt-very-light: lighten($asphalt-default, 40%);
 $default-color: #483A48;
-$gray-default: #b3b3b3;
+$gray-default: #DCE0E0;
 $red-default: #e74c3c;
+$red-light: lighten($red-default, 5%);
 
 
 /* Center maker  for floated elements */
@@ -13,4 +15,5 @@ $red-default: #e74c3c;
   float: none !important;
   display: block;
   margin: 0 auto;
+  text-align: center;
 }

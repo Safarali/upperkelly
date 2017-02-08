@@ -1,16 +1,23 @@
 <nav class="top-nav">
     <div class="container">
         <div class="logo">
-            <%= image_tag "logo1.png", class: "pull-left" %>
+            <%= link_to image_tag("logo1.png"), root_path, class: 'pull-left' %>
         </div>
          <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-th-list" aria-hidden="true"></i></a>
         <ul class="top-nav-links pull-right js--top-nav-links">
-            <li><%= link_to "Addison", "#" %></li>
-            <li><%= link_to "Adelina", "#" %></li>
-            <li><%= link_to "Adrian", "#" %></li>
-            <li><%= link_to "Alice", "#" %></li>
-            <li><%= link_to "Alma", "#" %></li>
-            <li><%= link_to "Andjela", "#" %></li>
+            <% if admin_signed_in? %>
+                <li><%= link_to "Houses List", "#" %></li>
+                <li><%= link_to "Settings", "#" %></li>
+                <li><%= link_to "Sign Out",destroy_admin_session_path, method: :delete %></li>
+            <% else %>
+                <li><%= link_to "Addison", "#" %></li>
+                <li><%= link_to "Adelina", "#" %></li>
+                <li><%= link_to "Adrian", "#" %></li>
+                <li><%= link_to "Alice", "#" %></li>
+                <li><%= link_to "Alma", "#" %></li>
+                <li><%= link_to "Andjela", "#" %></li>
+                <li><%= link_to "Sign In", new_admin_session_path %></li>
+            <% end %>
         </ul>
     </div>
 </nav>

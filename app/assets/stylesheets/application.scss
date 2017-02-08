@@ -17,6 +17,7 @@
 /* Third Party */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "toastr";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,500|Maven+Pro:500');
@@ -26,4 +27,5 @@
 @import "custom/global";
 @import "custom/navbar";
 @import "custom/home";
+@import "custom/forms";
 @import "custom/queries";
