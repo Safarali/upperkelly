@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :admins
   root 'pages#home'
+  devise_for :admins, controllers: { registrations: "registrations"}
 end
