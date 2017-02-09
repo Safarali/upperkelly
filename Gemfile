@@ -15,6 +15,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 gem 'toastr-rails'
 gem 'figaro'
+gem 'paperclip'
 
 
 group :development, :test do
