@@ -14,6 +14,7 @@ gem 'bootstrap-sass', '3.3.6'
 gem 'font-awesome-sass'
 gem 'devise'
 gem 'toastr-rails'
+gem 'figaro'
 
 
 group :development, :test do
