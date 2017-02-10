@@ -4,13 +4,15 @@ header {
   overflow-x: hidden;
 }
 
+/* Typography */
 
 h1 {
-  font-size: 280%;
+  font-size: 300%;
   color: $default-color;
-  line-height: 60px;
+  line-height: 70px;
   letter-spacing: 1px;
   margin-left: 30px;
+  margin-bottom: 30px;
   font-weight: 400;
 
 }
@@ -23,4 +25,12 @@ h1 {
   height: 15px;
   width: 550px;
   background-color: $default-color;
+}
+
+
+/* Home button */
+
+.hero-btn.home-btn {
+  display: inline-block;
+  margin-left: 30px;
 }

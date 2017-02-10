@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing:antialiased;
   -moz-font-smoothing:antialiased;
   background-color: #fff;
+  color: $default-color;
 }
 
 
@@ -27,7 +28,6 @@ section {
 
 h2 {
   margin-bottom: 30px;
-  color: $default-color;
 
   &:after {
     display: block;
@@ -37,4 +37,8 @@ h2 {
     width: 100px;
     margin: 30px auto 30px auto;
   }
+}
+
+h1, h2, h3 {
+  color: $default-color;
 }

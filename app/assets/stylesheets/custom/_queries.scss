@@ -23,9 +23,16 @@
   }
 
   /* Header */
+  h1 {
+    font-size: 180%;
+  }
   .hero-text:before {
     margin-top: 30px;
     width: 350px;
+  }
+
+  .hero-btn.home-btn {
+    padding: 10px 25px;
   }
 }
 
@@ -57,7 +64,9 @@
     padding: 90px 0 50px 40px;
     margin-top: -60px;
   }
-
+  .hero-btn.home-btn {
+    display: none;
+  }
 
 }
 
