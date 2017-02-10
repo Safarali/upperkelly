@@ -6,8 +6,9 @@
          <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-th-list" aria-hidden="true"></i></a>
         <ul class="top-nav-links pull-right js--top-nav-links">
             <% if admin_signed_in? %>
-                <li><%= link_to "Houses List", "#" %></li>
-                <li><%= link_to "Account", edit_admin_registration_path %></li>
+                <li><%= link_to "Create House", new_house_path %></li>
+                <li><%= link_to "Manage Houses", houses_path %></li>
+                <li><%= link_to "Admin Account", edit_admin_registration_path %></li>
                 <li><%= link_to "Sign Out",destroy_admin_session_path, method: :delete %></li>
             <% else %>
                 <li><%= link_to "Addison", "#" %></li>

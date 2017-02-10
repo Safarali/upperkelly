@@ -1,12 +1,12 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-body text-center">
                         <h2>Enter House Information Here</h2>
 
-                        <%= form_for @house do |f| %>
+                        <%= form_for @house, html: { multipart: true } do |f| %>
                             <div class="form-group">
                                 <%= f.text_field :name, autofocus: true, placeholder: "House name", class: "form-control" %>
                             </div>
@@ -48,6 +48,17 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-upload btn btn-info pull-left">
+                                        <span><i class="fa fa-cloud-upload" aria-hidden="true"></i></span>
+                                        <%= file_field_tag "images[]", type: :file, multiple: true, class: "upload-btn" %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photos-render">
+                                <%= render 'photos/list' %>
                             </div>
                             <div class="actions">
                                 <%= f.submit "Publish", class: "hero-btn" %>

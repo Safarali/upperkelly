@@ -7,6 +7,7 @@ class HousesController < ApplicationController
   end
 
   def show
+    @photos = @house.photos
   end
 
   def new
@@ -16,19 +17,41 @@ class HousesController < ApplicationController
   def create
     @house = current_admin.houses.build(house_params)
     if @house.save
+
+      if params[:images]
+        params[:images].each do |image|
+          @house.photos.create(image: image)
+        end
+      end
+
+      @photos = @house.photos
       redirect_to @house, notice: "You successfully listed your house"
     else
+      flash[:alert] = "All fields required!"
       render :new
     end
   end
 
   def edit
+    if current_admin.id == @house.admin.id
+      @photos = @house.photos
+    else
+      redirect_to root_path, notice: "You are not authorized!!!"
+    end
   end
 
   def update
     if @house.update(house_params)
+
+      if params[:images]
+        params[:images].each do |image|
+          @house.photos.create(image: image)
+        end
+      end
+
       redirect_to @house, notice: "Updated successfully"
     else
+      flash[:alert] = "All fields required"
       render :edit
     end
   end

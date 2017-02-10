@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170209073118) do
+ActiveRecord::Schema.define(version: 20170210005332) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -39,25 +39,25 @@ ActiveRecord::Schema.define(version: 20170209073118) do
     t.text     "summary"
     t.string   "address"
     t.integer  "bedroom"
-    t.integer  "bathroom"
     t.integer  "garage"
     t.integer  "sf"
     t.integer  "price"
     t.integer  "admin_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "bathroom"
     t.index ["admin_id"], name: "index_houses_on_admin_id"
   end
 
   create_table "photos", force: :cascade do |t|
-    t.integer  "room_id"
+    t.integer  "house_id"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.index ["room_id"], name: "index_photos_on_room_id"
+    t.index ["house_id"], name: "index_photos_on_house_id"
   end
 
 end
