@@ -8,6 +8,7 @@
   .hero-text:before {
     width: 450px;
   }
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -32,7 +33,7 @@
   }
 
   .hero-btn.home-btn {
-    padding: 10px 25px;
+    padding: 10px 20px;
   }
 }
 
@@ -59,13 +60,41 @@
   .hero-text:before {
     display: none;
   }
+  /* Hero image */
   h1 {
     border-left: 15px solid $red-default;
-    padding: 90px 0 50px 40px;
+    padding: 70px 0 20px 40px;
     margin-top: -60px;
+    margin-bottom: 0px;
   }
   .hero-btn.home-btn {
     display: none;
+    margin-bottom: 0px;
+  }
+
+/* Title for Homes list section */
+  section.h2-home-page {
+    padding-bottom: 30px;
+
+    .hero-btn {
+      display: inline-block;
+      font-size: 70%;
+    }
+
+    h2 {
+      font-size: 150%;
+
+      &:after {
+        margin: 20px auto;
+      }
+    }
+
+  }
+
+  .house-img-fact-box li {
+    font-size: 70%;
+    text-align: center;
+    margin-left: 10px;
   }
 
 }

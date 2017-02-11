@@ -2,7 +2,7 @@
     <div class="container-outside">
         <div class="row">
             <div class="col-sm-8 col-sm-push-4">
-                <%= image_tag "hero2.jpg", class: "img-responsive" %>
+                <%= image_tag "hero2.jpg", class: "img-responsive hero-img" %>
             </div>
             <div class="col-sm-4 col-sm-pull-8">
                 <div class="hero-text">
@@ -13,3 +13,12 @@
         </div>
     </div>
 </header>
+<section class="h2-home-page text-center">
+    <div class="container">
+        <h2>Homes Built For Your Family</h2>
+        <%= link_to "Require Callback", "#", class: "hero-btn" %>
+    </div>
+</section>
+<section class="home-page-showcase">
+    <%= render 'houses/home-page-houses' %>
+</section>

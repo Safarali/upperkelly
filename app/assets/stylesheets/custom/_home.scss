@@ -34,3 +34,64 @@ h1 {
   display: inline-block;
   margin-left: 30px;
 }
+
+
+
+/*============ Houses List General Settings ============*/
+
+section.h2-home-page {
+ margin-top: 50px;
+ padding: 0px;
+ background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('h2.png');
+
+
+ h2 {
+   color: #fff;
+   text-align: center;
+   font-size: 180%;
+ }
+
+ .hero-btn{
+   display: none;
+ }
+}
+
+section.home-page-showcase {
+  overflow-x: hidden;
+  padding: 60px 0;
+  background-color: #f9fffe;
+}
+
+
+/* Each House */
+
+.house-img {
+  position: relative;
+}
+
+.house-img-fact-box {
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+
+    li {
+      color: #fff;
+      display: inline-block;
+      margin-left: 20px;
+      font-family: 'Quattrocento Sans', sans-serif;
+      font-size: 90%;
+      text-align: center;
+    }
+}
+
+.house-img img {
+  opacity: 0.9;
+  transition: opacity 1.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
