@@ -1,0 +1,62 @@
+<div class="container-outside">
+    <% @houses.each do |house| %>
+        <% if @houses.index(house).even? %>
+            <div class="row no-gutter">
+                <h3 class="text-center name-mobile"><%= house.name %></h3>
+                <div class="col-sm-6 house-img">
+                    <%= image_tag house.photos[0].image.url(), class: "img-responsive" %>
+                    <div class="fact-box-mobile">
+                        <div class="price-mobile">
+                            <%= price_conver house.price %>
+                        </div>
+                        <ul>
+                            <li><%= house.sf %> sq ft</li>
+                            <li><%= house.garage %> car garage</li>
+                            <li><%= house.bedroom %> bedrooms</li>
+                            <li><%= house.bathroom %> bathrooms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 fact-box-right">
+                    <h3><%= house.name %></h3><br />
+                    <ul class="house-details-desktop">
+                        <li><%= house.sf %> sq ft</li>
+                        <li><%= house.garage %> car garage</li>
+                        <li><%= house.bedroom %> bedrooms</li>
+                        <li><%= house.bathroom %> bathrooms</li>
+                        <li><%= price_conver house.price %></li>
+                    </ul>
+                    <!-- <p class="price-desktop"><%= price_conver house.price %></p> -->
+                </div>
+            </div>
+        <% else %>
+            <div class="row no-gutter">
+                <h3 class="text-center name-mobile"><%= house.name %></h3>
+                <div class="col-sm-6 col-sm-push-6 house-img">
+                    <%= image_tag house.photos[0].image.url(), class: "img-responsive" %>
+                    <div class="fact-box-mobile">
+                        <div class="price-mobile">
+                            <%= price_conver house.price %>
+                        </div>
+                        <ul>
+                            <li><%= house.sf%> sq ft </li>
+                            <li><%= house.garage %> car garage</li>
+                            <li><%= house.bedroom %> bedrooms</li>
+                            <li><%= house.bathroom %> bathrooms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6 fact-box-left">
+                    <h3><%= house.name %></h3><br />
+                    <ul class="house-details-desktop right-side ">
+                        <li><%= house.sf %> sq ft</li>
+                        <li><%= house.garage %> car garage</li>
+                        <li><%= house.bedroom %> bedrooms</li>
+                        <li><%= house.bathroom %> bathrooms</li>
+                        <li><%= price_conver house.price %></li>
+                    </ul>
+                </div>
+            </div>
+        <% end %>
+    <% end %>
+</div>

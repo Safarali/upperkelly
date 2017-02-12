@@ -42,7 +42,7 @@
   border: none;
   font-size: 20px;
   padding: 10px 40px;
-  color: #fff;
+  color: $white;
   border-radius: 2px;
 
   &:hover,
@@ -51,7 +51,7 @@
     background-color: $red-light;
     outline: none;
     text-decoration: none;
-    color: #fff;
+    color: $white;
   }
 }
 .form-btn {

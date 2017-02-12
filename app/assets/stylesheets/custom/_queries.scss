@@ -5,9 +5,34 @@
     font-size: 230%;
     line-height: 50px;
   }
-  .hero-text:before {
-    width: 450px;
+  .hero-text:before { width: 450px; }
+
+
+  /* Fact Boxex */
+
+  .fact-box-right h3,
+  .fact-box-left h3 {
+    margin-bottom: 25px;
   }
+
+  .house-details-desktop {
+    padding: 30px 150px 20px 30px;
+
+    li {
+      font-size: 70%;
+    }
+  }
+
+  .fact-box-left h3 {
+    position: relative;
+    left: 300px;
+    padding-right: 150px;
+  }
+
+  .house-details-desktop.right-side {
+    padding: 20px 30px 15px 150px;
+  }
+
 
 }
 
@@ -19,48 +44,76 @@
     @include center-maker;
   }
 
-  .top-nav-links li {
-    margin-top: 10px;
-  }
+  .top-nav-links li { margin-top: 10px; }
 
   /* Header */
-  h1 {
-    font-size: 180%;
-  }
+  h1 { font-size: 180%; }
   .hero-text:before {
     margin-top: 30px;
     width: 350px;
   }
 
-  .hero-btn.home-btn {
-    padding: 10px 20px;
+  .hero-btn.home-btn { padding: 10px 20px; }
+
+  /* Home showcase image each */
+
+  .fact-box-mobile li {
+    font-size: 70%;
+    text-align: center;
+    margin-left: 10px;
   }
+
+
+  /* Fact Boxes */
+
+  .fact-box-right,
+  .fact-box-left {
+    padding-top: 15px;
+  }
+
+  .house-details-desktop {
+    padding: 5px 150px 5px 30px;
+
+    li {
+      font-size: 70%;
+      line-height: 25px;
+    }
+  }
+
+  .fact-box-left h3 {
+    position: relative;
+    left: 200px;
+    padding-right: 150px;
+  }
+
+  .house-details-desktop.right-side {
+    padding: 5px 30px 5px 100px;
+    position: relative;
+    left: 25px;
+  }
+
+
 }
 
 @media only screen and (max-width: 767px) {
   /* Navigation */
-  .top-nav {
-    padding-bottom: 20px;
-  }
-  .top-nav-links {
-    display: none;
-  }
+  .top-nav { padding-bottom: 20px; }
+
+  .top-nav-links { display: none; }
 
   .logo img {
     float: left !important;
     height: 50px;
   }
 
-  .mobile-nav-icon {
-    display: block;
-  }
+  .mobile-nav-icon { display: block; }
 
   /* Header */
 
-  .hero-text:before {
-    display: none;
-  }
+  .hero-text:before { display: none; }
+
   /* Hero image */
+
   h1 {
     border-left: 15px solid $red-default;
     padding: 70px 0 20px 40px;
@@ -72,7 +125,7 @@
     margin-bottom: 0px;
   }
 
-/* Title for Homes list section */
+/* Home page h2 */
   section.h2-home-page {
     padding-bottom: 30px;
 
@@ -91,10 +144,42 @@
 
   }
 
-  .house-img-fact-box li {
-    font-size: 70%;
-    text-align: center;
-    margin-left: 10px;
+  section.home-page-showcase { padding: 30px 0; }
+
+  /* House list */
+
+  .fact-box-right, .fact-box-left { display: none; }
+
+  .fact-box-mobile {
+    padding: 5px 0;
+    display: block;
+
+    li {
+      font-size: 70%;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+
+  .name-mobile {
+    display: block;
+
+    &:after {
+      content: " ";
+      height: 1px;
+      width: 60px;
+      display: block;
+      margin: 20px auto;
+      background-color: $red-default;
+    }
+  }
+
+
+  .price-mobile {
+    display: block;
+    color: $red-default;
+    margin-bottom: -5px;
+    font-weight: bold;
   }
 
 }

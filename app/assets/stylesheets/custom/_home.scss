@@ -46,52 +46,114 @@ section.h2-home-page {
 
 
  h2 {
-   color: #fff;
+   color: $white;
    text-align: center;
    font-size: 180%;
  }
 
- .hero-btn{
-   display: none;
- }
+ .hero-btn{ display: none; }
 }
 
 section.home-page-showcase {
   overflow-x: hidden;
-  padding: 60px 0;
+  padding: 50px 0;
   background-color: #f9fffe;
 }
 
 
-/* Each House */
 
-.house-img {
-  position: relative;
-}
+/* Fact box mobile*/
 
-.house-img-fact-box {
+.house-img { position: relative; opacity: 0.9}
+
+.fact-box-mobile {
     width: 100%;
-    padding: 10px 0px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
+    display: none;
 
     li {
-      color: #fff;
+      color: $white;
       display: inline-block;
       margin-left: 20px;
       font-family: 'Quattrocento Sans', sans-serif;
       font-size: 90%;
       text-align: center;
+      font-weight: bold;
     }
 }
 
-.house-img img {
-  opacity: 0.9;
-  transition: opacity 1.3s;
+.name-mobile { display: none; }
 
-  &:hover {
-    opacity: 1;
+.price-mobile {
+  display: none;
+}
+
+
+/* Fact Box Desktop, Ipad */
+.fact-box-right {
+  padding-top: 50px;
+}
+.fact-box-right h3 {
+  padding-top: 20px;
+  padding-left: 200px;
+  display: inline-block;
+  border-top: 15px solid $orange;
+  position: relative;
+  right: 50px;
+  margin-bottom: 50px;
+}
+
+.house-details-desktop {
+  list-style-type: none;
+  background-color: $blue-light;
+  display: inline-block;
+  position: relative;
+  left: 150px;
+  padding: 30px 250px 30px 30px;
+
+  li {
+    font-family: 'Quattrocento Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: $white;
+    font-size: 80%;
+  }
+}
+
+/* Left details */
+
+.house-details-desktop.right-side {
+  padding: 30px 30px 30px 250px;
+  position: relative;
+  left: 75px;
+  border-left: none;
+}
+
+.fact-box-left {
+  padding-top: 50px;
+}
+
+.fact-box-left h3 {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-right: 200px;
+  border-top: 15px solid $orange;
+  position: relative;
+  left: 415px;
+}
+
+
+/* Seperator section */
+
+section.seperator {
+  padding: 20px;
+  background-color: $default-color;
+
+  h2 {
+    color: $white;
   }
 }

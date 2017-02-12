@@ -3,7 +3,7 @@ class House < ApplicationRecord
   has_many :photos
 
   validates :name, presence: true, length: { maximum: 15 }
-  validates :summary, presence: true, length: { maximum: 200 }
+  validates :summary, presence: true, length: { maximum: 1000 }
   validates :address, presence: true
   validates :bedroom, numericality: true
   validates :bathroom, presence: true
