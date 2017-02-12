@@ -150,10 +150,14 @@ section.home-page-showcase {
 /* Seperator section */
 
 section.seperator {
-  padding: 20px;
+  padding: 30px;
   background-color: $default-color;
 
   h2 {
     color: $white;
+  }
+
+  .hero-btn {
+    font-size: 90%;
   }
 }
