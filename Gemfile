@@ -16,6 +16,7 @@ gem 'devise'
 gem 'toastr-rails'
 gem 'figaro'
 gem 'paperclip'
+gem 'aws-sdk', '~> 2.3'
 
 
 group :development, :test do
