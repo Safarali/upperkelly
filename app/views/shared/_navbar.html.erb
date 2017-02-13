@@ -11,12 +11,9 @@
                 <li><%= link_to "Admin Account", edit_admin_registration_path %></li>
                 <li><%= link_to "Sign Out",destroy_admin_session_path, method: :delete %></li>
             <% else %>
-                <li><%= link_to "Addison", "#" %></li>
-                <li><%= link_to "Adelina", "#" %></li>
-                <li><%= link_to "Adrian", "#" %></li>
-                <li><%= link_to "Alice", "#" %></li>
-                <li><%= link_to "Alma", "#" %></li>
-                <li><%= link_to "Andjela", "#" %></li>
+                <% @houses.each do |house| %>
+                    <li><%= link_to house.name, "#" %></li>
+                <% end %>
             <% end %>
         </ul>
     </div>
