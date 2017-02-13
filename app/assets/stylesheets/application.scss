@@ -20,8 +20,7 @@
 @import "toastr";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500|Maven+Pro:500');
-@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500');
 
 /* Custom Partials */
 @import "custom/veriables_mixins";
@@ -29,4 +28,5 @@
 @import "custom/navbar";
 @import "custom/home";
 @import "custom/forms";
+@import "custom/showcase-section.scss";
 @import "custom/queries";

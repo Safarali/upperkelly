@@ -8,8 +8,8 @@ body {
   font-size: 20px;
   font-family: 'Maven Pro', sans-serif;
   -webkit-font-smoothing:antialiased;
-  -moz-font-smoothing:antialiased;
-  background-color: #FAFAFA;
+  -webkit-text-rendering: optimizeLegibility;
+  background-color: $white;
   color: $default-color;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 section {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 h2 {
@@ -31,7 +31,7 @@ h2 {
 
   &:after {
     display: block;
-    height: 1px;
+    height: 2px;
     background-color: $gray-default;
     content: " ";
     width: 100px;

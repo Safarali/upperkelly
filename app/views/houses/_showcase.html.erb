@@ -17,16 +17,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 fact-box-right">
+                <div class="col-sm-6 fact-box">
                     <h3><%= house.name %></h3><br />
-                    <ul class="house-details-desktop">
+                    <ul class="house-details-list right">
                         <li><%= house.sf %> sq ft</li>
                         <li><%= house.garage %> car garage</li>
                         <li><%= house.bedroom %> bedrooms</li>
                         <li><%= house.bathroom %> bathrooms</li>
                         <li><%= price_conver house.price %></li>
                     </ul>
-                    <!-- <p class="price-desktop"><%= price_conver house.price %></p> -->
                 </div>
             </div>
         <% else %>
@@ -46,9 +45,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-sm-pull-6 fact-box-left">
+                <div class="col-sm-6 col-sm-pull-6 fact-box">
                     <h3><%= house.name %></h3><br />
-                    <ul class="house-details-desktop right-side ">
+                    <ul class="house-details-list left">
                         <li><%= house.sf %> sq ft</li>
                         <li><%= house.garage %> car garage</li>
                         <li><%= house.bedroom %> bedrooms</li>
