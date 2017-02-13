@@ -31,16 +31,17 @@ h2 {
 
   &:after {
     display: block;
-    height: 2px;
-    background-color: $gray-default;
+    height: 1px;
     content: " ";
     width: 100px;
     margin: 30px auto;
+    background-color: $gray;
   }
 }
 
 h1, h2, h3 {
   color: $default-color;
+  font-weight: 400;
 }
 
 /* Columns-without-paddings */

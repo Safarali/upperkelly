@@ -1,7 +1,6 @@
 /* Panel */
 .panel {
   background: #FEFDFB;
-  border: 1px solid $asphalt-very-light;
 }
 
 /* Form */
@@ -14,7 +13,7 @@
     pointer-events: none;
     top: 15px;
     right: 15px;
-    color: $asphalt-very-light;
+    color: $gray;
   }
 
   .fa.fa-envelope {
@@ -24,21 +23,18 @@
 
 .form-control {
   height: 50px;
-  color: $asphalt-lighter;
   box-shadow: none;
 
   &:hover,
   &:focus {
     box-shadow: none;
-    border: 1px solid $asphalt-very-light;
   }
 }
 
 .form-control::-webkit-input-placeholder {
-    color: rgba(170, 170, 170, .5)
 }
 .hero-btn{
-  background-color: $red-default;
+  background-color: $red;
   border: none;
   font-size: 20px;
   padding: 10px 40px;
@@ -60,9 +56,9 @@
 
 .form-footer {
   font-size: 70%;
-  border-top: 1px solid $gray-default ;
   margin-top: 20px;
   padding-top: 15px;
+  border-top: 1px solid $gray;
 
   a {
     color: $default-color;
@@ -75,7 +71,8 @@
 
 .check-box {
   font-size: 70%;
-  color: $asphalt-lighter;
+  font-weight: 400;
+  letter-spacing: 1px;
   margin-top: -10px;
   margin-bottom: 5px;
   text-align: left;

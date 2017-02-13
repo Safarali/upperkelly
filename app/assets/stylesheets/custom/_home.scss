@@ -8,7 +8,6 @@ header {
 
 h1 {
   font-size: 300%;
-  color: $default-color;
   line-height: 70px;
   letter-spacing: 1px;
   margin-left: 30px;
@@ -42,7 +41,7 @@ h1 {
 .request-calback-section {
    margin-top: 50px;
    padding: 0px;
-   background-color: #8C7676;
+   background-color: $blue;
 
  h2 {
    color: $white;
