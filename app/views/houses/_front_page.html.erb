@@ -1,0 +1,29 @@
+<div class="container">
+    <% @houses.each_slice(2) do |row| %>
+        <div class="row">
+            <% row.each do |house| %>
+                <div class="col-md-6 col-sm-6 house-box">
+                    <div class="panel panel-default">
+                        <div class="panel-heading house-img">
+                            <%= image_tag house.photos[0].image.url(),class: "img-responsive" %>
+                            <ul>
+                                <li><%= house.name %></li>
+                                <li><%= price_conver house.price %></li>
+                                <li><%= link_to "View", house_path(house) %> </li>
+                            </ul>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="house-details">
+                                <li><%= house.sf %> sqft.</li>
+                                <li><%= house.bedroom %> bds.</li>
+                                <li><%= house.bathroom %> ba.</li>
+                                <li><%= house.garage %> car garage</li>
+                                <li><%= link_to "View", house_path(house) %> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    <% end %>
+</div>

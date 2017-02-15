@@ -7,20 +7,35 @@
   }
   .hero-text:before { width: 450px; }
 
-  /* =======================showcase-section ======================= */
+  /* =======================Frontpage ======================= */
 
-  .house-details-list.right{
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .house-img ul {
+    padding: 8px 10px;
+
+    li:last-child {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 85%;
+    }
   }
 
-  .house-details-list.left  {
-    margin-left: 15px;
-    width: 400px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
+  .house-details {
+    li {
+      font-size: 80%;
+      text-align: center;
+      margin-right: 0;
+      margin-left: 5px;
 
+      &:last-child {
+        display: none;
+      }
+
+      &:nth-child(4) {
+        border: none;
+        padding-right: 0px;
+      }
+    }
+  }
 
 }
 
@@ -42,29 +57,6 @@
   }
 
   .hero-btn.home-btn { padding: 10px 20px; font-size: 80%; }
-
-  /* =============Home page houses, mobile settings ================= */
-
-  .fact-box-mobile li {
-    font-size: 70%;
-    text-align: center;
-    margin-left: 10px;
-  }
-
-  /* ======================= Showcase-section =======================*/
-
-.fact-box {
-  padding-top: 20px;
-
-  li {
-    font-size: 70%;
-    line-height: 25px;
-  }
-
-  .house-details-list.left {
-    width: 300px;
-  }
-}
 
 }
 
@@ -114,45 +106,6 @@
       }
     }
 
-  }
-
-/*==================== showcase-section ====================*/
-.showcase-section { padding: 30px 0; }
-
-  /* Mobile settings */
-  .fact-box-mobile {
-    padding: 5px 0;
-    display: block;
-
-    li {
-      font-size: 70%;
-      text-align: center;
-      margin-left: 10px;
-    }
-  }
-
-  .name-mobile {
-    display: block;
-
-    &:after {
-      content: " ";
-      height: 1px;
-      width: 60px;
-      display: block;
-      margin: 20px auto;
-      background-color: $red;
-    }
-  }
-
-
-  .price-mobile {
-    margin-bottom: -5px;
-    font-weight: bold;
-  }
-
-
-  .fact-box {
-    display: none;
   }
 
 }
