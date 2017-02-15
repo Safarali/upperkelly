@@ -1,21 +1,24 @@
 // /* ================ Front-Page ================= */
 /* Panel settings */
+
+.front-page {
+  background-color: #F4F4F4;
+}
 .house-box {
   margin-bottom: 35px;
+
 
   .panel-default {
     border-radius: 0;
     border: 0;
     background-color: $white;
-    box-shadow: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 5px;
 
   }
 
   .panel-body {
-    border: 1px solid $gray;
-    border-top: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  border: 0;
   }
 }
 
@@ -33,7 +36,7 @@
       bottom: 0;
       width: 100%;
       padding: 15px 20px;
-      background-color: $green-light;
+      background-color: $red-transparent;
 
       li {
         color: $white;
@@ -81,7 +84,7 @@
 
     &:last-child a {
       text-decoration:none;
-      color: $green;
+      color: $red-transparent;
     }
   }
 }
