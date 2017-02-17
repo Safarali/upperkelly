@@ -1,12 +1,11 @@
 // /* ================ Front-Page ================= */
 /* Panel settings */
-
 .front-page {
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
 }
 .house-box {
   margin-bottom: 35px;
-
 
   .panel-default {
     border-radius: 0;
@@ -19,72 +18,61 @@
 
   .panel-body {
   border: 0;
+  background-color: #EBF7FF;
   }
 }
 
-/* House img */
- .house-img {
-    padding: 0;
-    position: relative;
-    border: none;
+/* House Details */
+.house-img {
+  padding: 0;
+  position: relative;
+  border: none;
 
     img { width: 100%; }
 
-    ul {
+    .house-details {
       margin-bottom: 0px;
       position: absolute;
       bottom: 0;
       width: 100%;
       padding: 15px 20px;
-      background-color: $red-transparent;
+      background-color: $default-light;
 
-      li {
-        color: $white;
-        display: inline-block;
-
-        &:first-child {
-          font-weight: 700;
-          border-right: 1px solid $white;
-          padding-right: 10px;
-        }
-
-        &:nth-child(2) {
-          font-weight: 500;
+        li {
+          color: $white;
+          display: inline-block;
           font-size: 90%;
+          margin-right: 20px;
         }
+     }
+  }
 
-        &:last-child {
-          float: right;
-          display: none;
 
-          a {
-            text-decoration: none;
-            color: $white;
-          }
-        }
+  /* House Name, Price, View */
+
+  .house-name-price-view {
+    margin-bottom: 0;
+
+    li {
+      display: inline-block;
+      color: $default-light;
+      font-size: 100%;
+      margin-right: 20px;
+
+      &:first-child {
+        padding-right: 20px;
+        border-right: 1px solid $default-light;
+        font-weight: 500;
       }
 
-    }
-}
+      &:nth-child(2) {
+        padding-right: 20px;
+        border-right: 1px solid $default-light;
+        font-size: 90%;
+      }
 
-/* House-details */
-.house-details {
-  margin-bottom: 0px;
-
-  li {
-    display: inline-block;
-    font-size: 90%;
-    margin-right: 5px;
-    font-weight: 500;
-
-    &:nth-child(4) {
-      border-right: 2px solid $gray;
-      padding-right: 20px;
-    }
-
-    &:last-child a {
-      text-decoration:none;
-      color: $red-transparent;
+      &:last-child i {
+        color: $red;
+      }
     }
   }
-}

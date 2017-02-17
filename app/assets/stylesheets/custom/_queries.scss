@@ -9,34 +9,20 @@
 
   /* =======================Frontpage ======================= */
 
-  .house-img ul {
-    padding: 8px 10px;
-
-    li:last-child {
-      display: inline-block;
-      font-weight: 500;
-      font-size: 85%;
-    }
-  }
-
-  .house-details {
-    li {
-      font-size: 80%;
-      text-align: center;
-      margin-right: 0;
-      margin-left: 5px;
-
-      &:last-child {
-        display: none;
-      }
-
-      &:nth-child(4) {
-        border: none;
-        padding-right: 0px;
+  .house-img {
+    .house-details {
+      li {
+        margin-right: 10px;
+        font-size: 80%;
       }
     }
   }
 
+/* Realtor Section */
+
+  .realtor-img img  {
+    left: 40px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -58,6 +44,33 @@
 
   .hero-btn.home-btn { padding: 10px 20px; font-size: 80%; }
 
+
+  /* House details */
+
+  .house-img {
+    .house-details {
+      padding: 5px;
+      li {
+        margin-right: 5px;
+        font-size: 70%;
+      }
+    }
+  }
+
+  .house-name-price-view {
+    li {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+
+
+
+  /* Realtor Section */
+
+    .realtor-img img  {
+      height: 125px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -107,6 +120,52 @@
     }
 
   }
+
+  /* House details */
+
+  .house-name-price-view {
+    text-align: center;
+    li {
+      font-size: 80%;
+      text-align: center;
+    }
+  }
+
+  /* Realtor Section */
+
+    .realtor-img img  {
+      height: 100px;
+      left: 0;
+      top: 0;
+    }
+
+    .realtor-details {
+
+      h2:after {
+        margin-top: 15px;
+      }
+      a.home-btn.hero-btn{
+        display: inline-block;
+        padding: 10 30px;
+        margin-left: -10px;
+      }
+
+      ul {
+        margin-top: -10px;
+      }
+    }
+
+    /* Footer */
+
+    footer {
+      ul {
+        margin-left: -15px;
+      }
+      ul li {
+        margin-top: 0;
+        margin-left: 15px;
+      }
+    }
 
 }
 

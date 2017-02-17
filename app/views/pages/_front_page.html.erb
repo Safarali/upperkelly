@@ -6,19 +6,22 @@
                     <div class="panel panel-default">
                         <div class="panel-heading house-img">
                             <%= image_tag house.photos[0].image.url(),class: "img-responsive" %>
-                            <ul>
-                                <li><%= house.name %></li>
-                                <li><%= price_conver house.price %></li>
-                                <li><%= link_to "View", house_path(house) %> </li>
+                            <ul class="house-details text-center">
+                                <li><%= house.sf %> sf.</li>
+                                <li><%= house.bedroom %> bedrooms</li>
+                                <li><%= house.bathroom %> bathrooms</li>
+                                <li><%= house.garage %> car gar.</li>
                             </ul>
                         </div>
                         <div class="panel-body">
-                            <ul class="house-details">
-                                <li><%= house.sf %> sqft.</li>
-                                <li><%= house.bedroom %> bds.</li>
-                                <li><%= house.bathroom %> ba.</li>
-                                <li><%= house.garage %> car garage</li>
-                                <li><%= link_to "View", house_path(house) %> </li>
+                            <ul class="house-name-price-view text-center">
+                                <li><%= house.name %></li>
+                                <li><%= price_conver house.price %></li>
+                                <li>
+                                    <%= link_to house_path(house) do %>
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <% end %>
+                                </li>
                             </ul>
                         </div>
                     </div>

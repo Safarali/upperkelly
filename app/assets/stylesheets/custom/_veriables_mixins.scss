@@ -1,14 +1,10 @@
 /* Colors */
 $default-color: #0F1021;
-$default-light: rgba(15, 16, 33, 0.8);
+$default-light: rgba(15, 16, 33, .7);
 $red: #ED5485;
 $red-light: lighten($red, 5%);
-$red-transparent: rgba(237, 84, 133, 0.8);
-$blue: #539DDB;
 $white: #fff;
 $gray: #E0E7E9;
-$green: rgba(30, 184, 72, 1);
-$green-light: rgba(30, 184, 72, 0.8);
 
 
 /* Center maker  for floated elements */
