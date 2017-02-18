@@ -41,7 +41,7 @@ h1 {
 .request-calback-section {
    margin-top: 50px;
    padding: 0px;
-   background-color: rgba(52, 73, 94,1.0);
+   background-color: #34495e;
 
  h2 {
    color: $white;
@@ -78,7 +78,7 @@ h1 {
     color: $white;
 
     &:after {
-      height: 2px;
+      height: 1px;
       background-color: $white;
       margin-top: 15px;
     }
@@ -99,14 +99,14 @@ h1 {
 .notice-section {
   padding: 30px;
   font-size: 70%;
-  background-color: #EBF7FF;
+  background-color: $blue-light;
 }
 
 /* ============== Footer  *================= */
 
 
 footer {
-  background-color: rgba(52, 73, 94,1.0);
+  background-color: $asphalt;
   padding: 30px;
 
   .logo-footer img {
@@ -117,7 +117,7 @@ footer {
   p {
     margin-top: 10px;
     font-size: 70%;
-    color: $gray;
+    color: $gray-dark;
   }
   ul li {
     display: inline-block;
@@ -126,7 +126,7 @@ footer {
     margin-left: 20px;
 
     a, a:hover {
-      color: $gray;
+      color: $gray-dark;
       text-decoration: none;
     }
   }
