@@ -1,7 +1,6 @@
 class House < ApplicationRecord
   belongs_to :admin
   has_many :photos
-
   validates :name, presence: true, length: { maximum: 15 }
   validates :summary, presence: true, length: { maximum: 1000 }
   validates :address, presence: true

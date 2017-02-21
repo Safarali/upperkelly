@@ -11,45 +11,6 @@
         </div>
     </div>
 </header>
-
 <section class="house-facts-section">
-    <div class="container">
-        <h2 class="text-center">House Details</h2>
-        <div class="row text-center">
-            <div class="col-md-10 col-md-offset-1 house-facts-box">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <%= image_tag 'bed.png' %>
-                        <p><%= @house.bedroom %> spacious bedrooms</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-bath" aria-hidden="true"></i>
-                        <p><%= @house.bathroom %> full bathrooms</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <%= image_tag 'garage.png' %>
-                        <p><%= @house.garage %> car garage</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-10 col-md-offset-1 house-facts-box">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-th" aria-hidden="true"></i>
-                        <p><%= @house.sf %> sq ft. of living space. <br> <%= @house.no_ac_sf %> sq ft. of unconditioned area.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <%= image_tag 'balcony.png' %>
-                        <p>Dual pane windows throughout offering great lighting. Plus balconies.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <%= image_tag 'stove.png' %>
-                        <p>Granite counter tops, stainless steel gas range, dishwasher.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <%= render 'house_details' %>
 </section>

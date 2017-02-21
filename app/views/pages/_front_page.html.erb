@@ -5,7 +5,9 @@
                 <div class="col-md-6 col-sm-6 house-box">
                     <div class="panel panel-default">
                         <div class="panel-heading house-img">
-                            <%= image_tag house.photos[0].image.url(),class: "img-responsive" %>
+                            <%= link_to house_path(house) do %>
+                                <%= image_tag house.photos[0].image.url(),class: "img-responsive" %>
+                                <% end %>
                             <ul class="house-details text-center">
                                 <li><%= house.sf %> sf.</li>
                                 <li><%= house.bedroom %> bedrooms</li>
