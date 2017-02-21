@@ -12,7 +12,7 @@
                 <li><%= link_to "Sign Out",destroy_admin_session_path, method: :delete %></li>
             <% else %>
                 <% @houses.each do |house| %>
-                    <li><%= link_to house.name, "#" %></li>
+                    <li><%= link_to house.name, house_path(house) %></li>
                 <% end %>
             <% end %>
         </ul>

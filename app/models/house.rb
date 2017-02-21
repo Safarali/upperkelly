@@ -10,4 +10,6 @@ class House < ApplicationRecord
   validates :garage, numericality: true
   validates :sf, numericality: { greater_than: 1500 }
   validates :price, numericality: { greater_than: 700000 }
+  validates :lot_name, presence: true
+  validates :no_ac_sf, numericality: true
 end

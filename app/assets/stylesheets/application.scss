@@ -13,7 +13,6 @@
  * require_tree .
  * require_self
  */
-
 /* Third Party */
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -28,5 +27,7 @@
 @import "custom/navbar";
 @import "custom/home";
 @import "custom/forms";
-@import "custom/front_page";
+@import "custom/front_page_houses";
+@import "custom/house_show";
+@import "lightbox";
 @import "custom/queries";
