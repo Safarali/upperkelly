@@ -13,7 +13,7 @@
 
 //= require jquery
 //= require jquery_ujs
-//= require lightbox
+//= require jquery.swipebox.js
 //= require bootstrap-sprockets
 //= require toastr
 //= require scripts
