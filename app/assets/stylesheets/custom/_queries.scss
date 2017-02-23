@@ -23,6 +23,12 @@
   .realtor-img img  {
     left: 40px;
   }
+
+  /* ============== Modal  *================= */
+
+  .modal-dialog {
+    width: 35%;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -93,6 +99,12 @@
       p {
         font-size: 75%;
       }
+    }
+
+    /* ============== Modal  *================= */
+
+    .modal-dialog {
+      width: 45%;
     }
 
 }
@@ -188,6 +200,18 @@
         margin-top: 0;
         margin-left: 15px;
       }
+    }
+
+
+    /* ============== Modal  *================= */
+
+    .modal-dialog {
+      width: 100%;
+    }
+
+
+    .message-form-section {
+      h2 { font-size: 135%; }
     }
 }
 

@@ -7,6 +7,7 @@ class HousesController < ApplicationController
   end
 
   def show
+    @message = Message.new
     @photos = @house.photos
   end
 

@@ -28,11 +28,10 @@
   &:hover,
   &:focus {
     box-shadow: none;
+    border: 1px solid $gray-dark;
   }
 }
 
-.form-control::-webkit-input-placeholder {
-}
 .hero-btn{
   background-color: $red;
   border: none;

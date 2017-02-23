@@ -1,0 +1,44 @@
+<header class="message-header">
+    <div class="container">
+        <div class="hero-box">
+            <h1>Contact Us</h1>
+            <p>Contact us to learn more about our existing and upcoming developments.</p>
+        </div>
+    </div>
+</header>
+<section class="message-form-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <h2>Send a Message</h2>
+                <%= form_for(@message, url: message_path ) do |f| %>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                  <%= f.text_field :name, autofocus: true, class: "form-control", placeholder: "Name" %>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <%= f.telephone_field :phone, class: "form-control", placeholder: "Phone number" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <%= f.text_area :content, rows: 7, class: "form-control", placeholder: "Message" %>
+                    </div>
+                    <div class="actions">
+                      <%= f.submit "Send", class: "hero-btn" %>
+                    </div>
+                <% end %>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <h2>LOA Properties</h2>
+                <div class="map">
+                </div>
+                <p>1860 Hove Ave, Sacramento, CA 95825</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="http://maps.google.com/maps/api/js"></script>

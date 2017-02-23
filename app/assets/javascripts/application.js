@@ -16,5 +16,6 @@
 //= require jquery.swipebox.js
 //= require bootstrap-sprockets
 //= require toastr
+//= require gmaps.js
 //= require scripts
 //= require_tree .
