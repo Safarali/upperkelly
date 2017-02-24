@@ -134,7 +134,6 @@
     top: 70px;
     left: 0;
     background-color: $default-sticky;
-    vertical-align: top;
 
     a {
       color: $white;
@@ -159,6 +158,10 @@
       top: 50px;
       border-top: 1px solid $gray-dark;
       background-color: $asphalt;
+
+      li {
+        margin-left: 15px;
+      }
     }
 
     a.logo-sticky img {
