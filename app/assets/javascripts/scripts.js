@@ -20,12 +20,12 @@ $(document).ready(function() {
 
         nav.slideToggle(100);
 
-        if(icon.hasClass('fa-th-list')){
+        if(icon.hasClass('fa-list')){
             icon.addClass('fa-times')
-            icon.removeClass('fa-th-list');
+            icon.removeClass('fa-list');
         }
         else {
-            icon.addClass('fa-th-list');
+            icon.addClass('fa-list');
             icon.removeClass('fa-times');
         }
     });

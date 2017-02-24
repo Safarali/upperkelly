@@ -59,18 +59,26 @@
 	z-index: 9999;
   background-color: $default-sticky;
 
-  .logo img {
-    display: none;
-  }
+    .logo img {
+      display: none;
+    }
 
-  a.logo-sticky img {
-    display: block;
- }
+    a.logo-sticky img {
+      height: 40px;
+      margin-top: 5px;
+      display: block;
+   }
 
- .top-nav-links a,
- .mobile-nav-icon i{
-   color: $white;
- }
+   .top-nav-links {
+     margin-right: 10px;
+   }
+   .top-nav-links a,
+   .mobile-nav-icon i{
+     color: $white;
+   }
 
+   .top-nav-links li {
+     margin-top: 10px;
+   }
 
 }

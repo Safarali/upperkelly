@@ -4,7 +4,7 @@
             <%= link_to image_tag("logo1.png"), root_path, class: 'pull-left' %>
             <%= link_to image_tag("logo-white.png"), root_path, class: 'pull-left logo-sticky' %>
         </div>
-         <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+         <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-list" aria-hidden="true"></i></a>
         <ul class="top-nav-links pull-right js--top-nav-links">
             <% if admin_signed_in? %>
                 <li><%= link_to "Create House", new_house_path %></li>
