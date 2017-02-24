@@ -33,6 +33,10 @@
 
 @media only screen and (max-width: 991px) {
   /* ======================= Top Navigation ======================= */
+
+  .top-nav {
+    height: 130px;
+  }
   .logo img,
   .logo a,
   .top-nav-links {
@@ -111,15 +115,53 @@
 
 @media only screen and (max-width: 767px) {
   /* ======================= Navigation  =======================*/
-  .top-nav { padding-bottom: 20px; }
 
-  .top-nav-links { display: none; }
 
+
+  .top-nav {
+    padding-top: 10px;
+    height: 70px;
+  }
+  .top-nav-links {
+    display: none;
+    float: left !important;
+    text-align: left;
+    clear: left;
+    width: 100%;
+    z-index: 9999;
+    padding: 5px 0px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: $default-sticky;
+    vertical-align: top;
+
+    a {
+      color: $white;
+    }
+  }
   .logo img {
     float: left !important;
     height: 50px;
+    clear: right;
   }
   .mobile-nav-icon { display: block; }
+
+  /* Sticky Navigation */
+
+  .sticky {
+    padding: 10px 10px;
+
+    .top-nav-links {
+      border-top: 1px solid $gray-dark;
+    }
+  }
+
+  /* Mobile Navigation */
+
+  .top-nav-links li {
+    display: block;
+  }
 
   /*  =======================Header ======================= */
 
@@ -213,6 +255,7 @@
     .message-form-section {
       h2 { font-size: 135%; }
     }
+
 }
 
 /*================ Container Outside =================*/

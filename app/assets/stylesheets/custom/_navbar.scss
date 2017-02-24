@@ -1,7 +1,9 @@
 /* Navigation */
 .top-nav {
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  height: 100px;
+  position: relative;
+
 }
 
 .mobile-nav-icon {
@@ -18,16 +20,19 @@
 .logo img {
   width: auto;
   height: 60px;
-  margin-top: 15px;
 }
+
+ a.logo-sticky img {
+  display: none;
+}
+
 .top-nav-links {
   list-style-type: none;
 
   li {
     display:  inline-block;
-    margin-left: 15px;
-    padding-left: 30px;
-    margin-top: 25px;
+    margin-left: 35px;
+    margin-top: 15px;
   }
 
   a {
@@ -39,4 +44,33 @@
     text-transform: uppercase;
 
   }
+}
+
+
+
+
+/* Sticky Navigation */
+.sticky {
+  padding: 5px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+	z-index: 9999;
+  background-color: $default-sticky;
+
+  .logo img {
+    display: none;
+  }
+
+  a.logo-sticky img {
+    display: block;
+ }
+
+ .top-nav-links a,
+ .mobile-nav-icon i{
+   color: $white;
+ }
+
+
 }

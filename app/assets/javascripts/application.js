@@ -17,5 +17,6 @@
 //= require bootstrap-sprockets
 //= require toastr
 //= require gmaps.js
+//= require jquery.waypoints.min.js
 //= require scripts
 //= require_tree .
