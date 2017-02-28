@@ -133,6 +133,25 @@ footer {
 }
 
 
+.ali-details {
+  &:before {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 200px;
+    margin: 20px auto;
+    background-color: $gray-dark;
+  }
+
+
+  i {
+    color: $red;
+    font-size: 80%;
+  }
+
+}
+
+
 /* ============== Modal  *================= */
 
 .modal-dialog {
