@@ -50,14 +50,14 @@ $(document).ready(function() {
   /* Google Maps */
   var map = new GMaps ({
     div: '.map',
-    lat: 38.6136684,
-    lng: -121.380043,
-    zoom: 12
+    lat: 37.731311,
+    lng: -122.452862,
+    zoom: 14
   });
 
   map.addMarker({
-    lat: 38.6136684,
-    lng: -121.380043,
+    lat: 37.731311,
+    lng: -122.452862,
     title: 'Sacramento, San Francisco',
     infoWindow: {
       content: '<p>Four Bridges</p>'
