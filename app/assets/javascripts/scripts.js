@@ -50,17 +50,17 @@ $(document).ready(function() {
   /* Google Maps */
   var map = new GMaps ({
     div: '.map',
-    lat: 38.599645,
-    lng: -121.414780,
+    lat: 38.6136684,
+    lng: -121.380043,
     zoom: 12
   });
 
   map.addMarker({
-    lat: 38.599645,
-    lng: -121.414780,
+    lat: 38.6136684,
+    lng: -121.380043,
     title: 'Sacramento, San Francisco',
     infoWindow: {
-      content: '<p>LOA Properties</p>'
+      content: '<p>Four Bridges</p>'
     }
   });
 });
